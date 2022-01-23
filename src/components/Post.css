@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-white: #ffffff;
+  --main-red: #cf3a59;
+  --main-blue: #081a51;
+  --main-background: #f8f9ff;
+  --main-lines: #dadada;
+  --btn-blue: #017efa;
+  --font-blue: #51cbff;
+}
+
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "GilroyMedium";
+  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Light.ttf);
+}
+body {
+  font-family: "GilroySemiBold", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: black;
+}
+.postAndtags-container {
+  margin: 2.5rem 5rem;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0px 5px 10px #f1f2fa;
+  z-index: 2;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  min-height: 80px;
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--main-lines);
+  flex-grow: 1;
+}
+
+.post-image-container {
+  /* border: 3px solid var(--main-white); */
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.post-userInfo,
+.post-dateInfo {
+  display: flex;
+  align-items: center;
+}
+
+.post-username {
+  font-family: "GilroySemiBold";
+  margin: 0 1rem 0 1rem;
+}
+
+.post-date {
+  font-family: "GilroyLight";
+  margin: 0 1rem 0 0.5rem;
+}
+
+.post-content-container {
+  min-height: 400px;
+  padding-bottom: 2rem;
+}
+
+.post-title {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+}
+
+.post-content {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: "GilroyMedium";
+  padding: 0 4rem;
+}
+
+.reactions-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 20px;
+  z-index: -1;
+}
+
+.tags-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.tags-left {
+  display: flex;
+}

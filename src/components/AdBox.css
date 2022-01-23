@@ -1,0 +1,140 @@
+:root {
+  --main-white: #ffffff;
+  --main-red: #cf3a59;
+  --main-blue: #081a51;
+  --main-background: #f8f9ff;
+  --main-lines: #dadada;
+  --btn-blue: #017efa;
+  --font-blue: #51cbff;
+  --facebook: #1a76d2;
+}
+
+@font-face {
+  font-family: "GilroyMedium";
+  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Medium.ttf);
+}
+.ads-container {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 300px 300px;
+  /* border-left: 1px solid var(--main-lines); */
+  grid-area: ad;
+  padding: 2rem 0 2rem 0;
+
+  /* max-height: 100vh; */
+}
+
+.anuncio-wrapper {
+  margin: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  width: 250px;
+  max-height: 250px;
+}
+#topMedia-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+#topMedia-title {
+  font-family: "GilroySemiBold";
+  font-size: 18px;
+  color: #1c1f37;
+  flex-grow: 1;
+}
+
+#details-btn {
+  margin-left: 0.5rem;
+  font-family: "GilroySemiBold";
+  font-size: 14px;
+  color: #017efa;
+  background: none;
+  flex-grow: 0.5;
+  cursor: pointer;
+}
+
+#topMedia-bar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  height: 7px;
+  background-color: white;
+  border-radius: 8px;
+  gap: 2px;
+  margin: 0 10px;
+}
+
+#item1 {
+  border-radius: 8px 0 0 8px;
+  background-color: #017efa;
+}
+
+#item2 {
+  border-radius: 0 0 0 0;
+  background-color: #fd1f9b;
+}
+
+#item3 {
+  border-radius: 0 0 0 0;
+  background-color: #007ab5;
+}
+
+#item4 {
+  border-radius: 0 8px 8px 0;
+  background-color: #ff3f18;
+}
+
+#topMedia-names {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.socialMedia-icon {
+  height: 1rem;
+  margin-right: 5px;
+}
+
+#facebook-title {
+  font-family: "GilroySemiBold";
+  color: #1a76d2;
+  width: 90px;
+}
+
+#instagram-title {
+  font-family: "GilroySemiBold";
+  color: #fd1f9b;
+  width: 90px;
+}
+
+#linkedin-title {
+  font-family: "GilroySemiBold";
+  color: #007ab5;
+  width: 90px;
+}
+
+#reddit-title {
+  font-family: "GilroySemiBold";
+  color: #ff3f18;
+  width: 90px;
+}
+.post-counter {
+  font-family: "GilroyMedium";
+  text-align: center;
+  font-size: 14px;
+  color: #313131;
+  flex-grow: 2;
+}
+
+.post-percentage {
+  font-family: "GilroyMedium";
+  text-align: right;
+  font-size: 14px;
+  color: #313131;
+  flex-grow: 1;
+}

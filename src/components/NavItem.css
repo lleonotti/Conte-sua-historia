@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "GilroyMedium";
+  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Medium.ttf);
+}
+
+.nav-icon {
+  width: 1.4rem;
+  margin: 0 0.75rem;
+}
+.nav-text {
+  font-family: "GilroyMedium";
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+}
