@@ -21,12 +21,12 @@
 
 @font-face {
   font-family: "GilroyThin";
-  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Thin.ttf);
+  src: url(../fonts/Gilroy-Thin.ttf);
 }
 
 @font-face {
   font-family: "GilroySemiBold";
-  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-SemiBold.ttf);
+  src: url(../fonts/Gilroy-SemiBold.ttf);
 }
 
 ul,

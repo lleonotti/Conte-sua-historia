@@ -16,12 +16,12 @@
 
 @font-face {
   font-family: "GilroySemiBold";
-  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-SemiBold.ttf);
+  src: url(../fonts/Gilroy-SemiBold.ttf);
 }
 
 @font-face {
   font-family: "GilroyMedium";
-  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Medium.ttf);
+  src: url(../fonts/Gilroy-Medium.ttf);
 }
 
 body {

@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "GilroyMedium";
-  src: url(C:\Users\Slayer\AppData\Local\Microsoft\Windows\Fonts\Gilroy-Medium.ttf);
+  src: url("../fonts/Gilroy-Medium.ttf");
 }
 .ads-container {
   position: fixed;
