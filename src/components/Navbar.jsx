@@ -9,7 +9,7 @@ import HashtagIcon from "../assets/hashtag-icon.svg";
 import questionIcon from "../assets/qmark-icon.svg";
 import NavItem from "./NavItem";
 
-function Navbar() {
+function Navbar({navState}) {
   const [storyCounter, setStoryCounter] = useState(1);
   return (
     <nav id="navbar-container">

@@ -5,11 +5,12 @@ import Post from "./components/Post";
 import Home from "./pages/Home";
 import Ad from "./components/AdBox";
 import Test from "./components/Test.jsx";
+import NovaHistoria from "./components/NovaHistoria";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <NovaHistoria />
   </React.StrictMode>,
   document.getElementById("root")
 );

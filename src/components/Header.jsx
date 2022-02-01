@@ -9,10 +9,6 @@ import arqueira from "../assets/bow.png";
 import barbaro from "../assets/barbarian.png";
 import gatuno from "../assets/thief.png";
 
-// function mudaCor(params) {}
-function hideNav(params) {
-  document.getElementById("navbar-container").display = "none"
-}
 
 function Header() {
   return (
@@ -23,7 +19,7 @@ function Header() {
           <p id="user-name">Ricardo Milos</p>
           <p id="user-email">ricardo.milos@gmail.com</p>
         </div>
-        <img id="user-chevron" src={chevron} alt="chevron icon" onClick={hideNav}/>
+        <img id="user-chevron" src={chevron} alt="chevron icon"/>
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">

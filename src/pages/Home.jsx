@@ -6,19 +6,14 @@ import Post from "../components/Post";
 import Ad from "../components/AdBox";
 import plusBtn from "../assets/plusBtn.svg";
 
-
-function toggleNav(params) {
-  if (navState == 0) {
-    
-  }
-}
 function Home() {
   const [navState, setNavState] = useState(1)
+
   return (
     <div className="page-container">
-      <Navbar />
+      <Navbar navState={navState}/>
       <div className="header-content-container">
-        <Header />
+        <Header navState={navState}/>
         <main className="main-section">
           <div className="content-container">
             <div className="feed-header-container">
