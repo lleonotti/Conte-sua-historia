@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import "./Home.css";
 import Header from "../components/Header";
@@ -6,7 +6,14 @@ import Post from "../components/Post";
 import Ad from "../components/AdBox";
 import plusBtn from "../assets/plusBtn.svg";
 
+
+function toggleNav(params) {
+  if (navState == 0) {
+    
+  }
+}
 function Home() {
+  const [navState, setNavState] = useState(1)
   return (
     <div className="page-container">
       <Navbar />

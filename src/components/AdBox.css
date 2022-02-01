@@ -28,6 +28,11 @@
   /* max-height: 100vh; */
 }
 
+@media (max-width: 768px) {
+  .ads-container {
+    display: none;
+  }
+}
 .anuncio-wrapper {
   margin: 1rem;
   border-radius: 8px;

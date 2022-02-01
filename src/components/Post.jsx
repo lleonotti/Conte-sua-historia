@@ -36,7 +36,7 @@ function Post() {
           </div>
         </header>
         <section className="post-content-container">
-          <p className="post-title">Strogonoff</p>
+          <p className="post-title">O dia que virei um meme</p>
           <p className="post-content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             autem iure ipsa minima quod culpa animi facilis laborum iste totam

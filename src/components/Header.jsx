@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import earth from "../assets/planet-earth.png";
+import milos from "../assets/milos.jpg";
 import chevron from "../assets/chevron-icon.svg";
 import darkMode from "../assets/darkMode-icon.svg";
 import bruxo from "../assets/wizard.png";
@@ -9,16 +10,20 @@ import barbaro from "../assets/barbarian.png";
 import gatuno from "../assets/thief.png";
 
 // function mudaCor(params) {}
+function hideNav(params) {
+  document.getElementById("navbar-container").display = "none"
+}
+
 function Header() {
   return (
     <header id="header-container">
       <div className="user-container">
-        <img className="foto-perfil" src={earth} alt="foto-perfil" />
+        <img className="foto-perfil" src={milos} alt="foto-perfil"  />
         <div id="user-info">
-          <p id="user-name">Natalie Paquette</p>
-          <p id="user-email">nat.paquette@gmail.com</p>
+          <p id="user-name">Ricardo Milos</p>
+          <p id="user-email">ricardo.milos@gmail.com</p>
         </div>
-        <img id="user-chevron" src={chevron} alt="chevron icon" />
+        <img id="user-chevron" src={chevron} alt="chevron icon" onClick={hideNav}/>
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">
