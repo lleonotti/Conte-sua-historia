@@ -7,6 +7,14 @@ import quit from "../assets/quit-icon.svg"
 import Tag from "./Tag";
 
 function NovaHistoria() {
+  const [anonState, setAnonState] = useState("Modo anônimo desativado");
+  function checkAnonState() {
+    if (anonState == "Modo anônimo desativado") {
+      setAnonState("Modo anônimo ativado")
+    } else {
+      setAnonState("Modo anônimo desativado")
+    }
+  }
   return <div className="postAndtags-container">
   <section className="tags-container">
     <div className="tags-left">
@@ -35,10 +43,19 @@ function NovaHistoria() {
       <input className="post-title" id="new-post-title" placeholder="Adicione um título"></input>
       <textarea className="post-content" id="new-post-content" placeholder="Conte sua historia..."></textarea>
 
-    <label className="switch">
-        <input type="checkbox"></input>
-        <span className="slider round"></span>
-    </label>
+    <div className="switch-container">
+      <div id="switch-wrapper">
+        <label className="switch">
+            <input type="checkbox" onClick={()=> checkAnonState()}></input>
+            <span className="slider round"></span>
+        </label>
+        <p id="anon-status">{anonState}</p>
+      </div>
+
+      <button id="post-btn" className="main-btn" type="button">
+          Postar
+      </button>
+    </div>
     </section>
   </div>
 </div>;

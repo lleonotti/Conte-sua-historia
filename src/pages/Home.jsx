@@ -4,11 +4,14 @@ import "./Home.css";
 import Header from "../components/Header";
 import Post from "../components/Post";
 import Ad from "../components/AdBox";
+import NovaHistoria from "../components/NovaHistoria"
 import plusBtn from "../assets/plusBtn.svg";
 
 function Home() {
   const [navState, setNavState] = useState(1)
-
+  function criaHistoria() {
+    return <NovaHistoria/>
+  }
   return (
     <div className="page-container">
       <Navbar navState={navState}/>
@@ -22,7 +25,7 @@ function Home() {
                 <p id="feed-subtitle">Bem vindo de volta, Ricardo Milos!</p>
               </div>
               <div id="novaHistoria-container">
-                <img src={plusBtn} alt="Botao nova historia" />
+                <img src={plusBtn} alt="Botao nova historia" onClick={criaHistoria()}/>
                 <p id="novaHistoria">Nova historia</p>
               </div>
             </div>

@@ -10,7 +10,7 @@ import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <NovaHistoria />
+    <Home/>
   </React.StrictMode>,
   document.getElementById("root")
 );
