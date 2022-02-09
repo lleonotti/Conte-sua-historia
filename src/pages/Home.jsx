@@ -10,7 +10,6 @@ import plusBtn from "../assets/plusBtn.svg";
 function Home() {
   const [navState, setNavState] = useState(1)
   function criaHistoria() {
-    return <NovaHistoria/>
   }
   return (
     <div className="page-container">

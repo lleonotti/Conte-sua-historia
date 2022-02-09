@@ -6,11 +6,12 @@ import Home from "./pages/Home";
 import Ad from "./components/AdBox";
 import Test from "./components/Test.jsx";
 import NovaHistoria from "./components/NovaHistoria";
+import Perfil from "./components/Perfil";
 import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home/>
+    <Perfil/>
   </React.StrictMode>,
   document.getElementById("root")
 );
