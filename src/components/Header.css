@@ -181,7 +181,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  #header-container{
+  #header-container {
     /* position: inherit; */
     top: 0;
     left: 0;
@@ -206,7 +206,7 @@ body {
     width: 100px;
     /* flex-grow: 0.1; */
   }
-  
+
   #darkMode-icon {
     width: 150px;
     /* flex-grow: 3; */
