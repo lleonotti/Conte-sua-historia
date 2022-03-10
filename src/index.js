@@ -11,7 +11,7 @@ import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Perfil/>
+    <Perfil />
   </React.StrictMode>,
   document.getElementById("root")
 );
