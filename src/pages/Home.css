@@ -6,11 +6,43 @@
 
 :root {
   --main-white: #ffffff;
+  --main-post: #ffffff;
+  --main-shadow: #f1f2fa
   --main-red: #cf3a59;
   --main-blue: #081a51;
+  --main-background: #f8f9ff;
+  --main-lines: #dadada;
   --btn-blue: #017efa;
   --font-blue: #51cbff;
-  --main-background: #f8f9ff;
+  --font-white: #ffffff;
+  --font-black: #000000;
+  --feed-title: #1c1f37;
+  --feed-subtitle: #6f6f6f;
+  --perma-white: #ffffff;
+  --help-box: #1b2b65;
+  --tags: #ffffff;
+  --search: #ffffff;
+  --glow: #f1f2fa;
+
+}
+
+.dark-mode:root {
+  --main-white: #000000;
+  --main-post: #444346;
+  --main-red: #cf3a59;
+  --main-blue: #000000;
+  --main-background: #232324;
+  --main-lines: #dadada;
+  --btn-blue: #017efa;
+  --font-blue: #51cbff;
+  --font-black: #ffffff;
+  --feed-title: #ffffff;
+  --feed-subtitle: #ffffff;
+  --help-box: #434346;
+  --tags: #303032;
+  --search: #434346;
+  --glow: #000000;
+
 }
 * {
   font-family: "GilroyMedium", "GilroyThin", "GilroySemiBold", sans-serif;
@@ -45,8 +77,10 @@ body {
 }
 
 .page-container {
+  position: relative;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 .header-content-container {
   display: flex;
@@ -83,13 +117,13 @@ body {
 #feed-title {
   font-family: "GilroySemiBold";
   font-size: 32px;
-  color: #1c1f37;
+  color: var(--feed-title);
 }
 
 #feed-subtitle {
   font-family: "GilroyMedium";
   font-size: 16px;
-  color: #6f6f6f;
+  color: var(--feed-subtitle);
 }
 
 #novaHistoria-container {
@@ -106,6 +140,7 @@ body {
 }
 
 #novaHistoria {
+  color: var(--font-black);
   margin: 0 0.5rem;
 }
 /* .page-container {

@@ -4,7 +4,7 @@ import quit from "../assets/quit-icon.svg";
 import lapiz from "../assets/lapiz.svg";
 import "./Perfil.css";
 
-function Perfil() {
+function Perfil({ open, blur, onClose }) {
   const [disable, setDisabled] = useState(true);
   const [name, setName] = useState("Strogonoff");
 
@@ -12,8 +12,15 @@ function Perfil() {
     setDisabled(false);
   };
 
+  if (!open) {
+    return null;
+  } else {
+    if (!blur) {
+      // document.getElementById("home-page-id").style.filter = "blur(8px)";
+    }
+  }
   return (
-    <div className="postAndtags-container">
+    <div className="perfil-container">
       <section className="tags-container">
         <div className="tags-left"></div>
         <img id="button-quit-post" src={quit} alt="Botao sair" />

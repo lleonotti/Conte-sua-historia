@@ -4,19 +4,21 @@ import "./Home.css";
 import Header from "../components/Header";
 import Post from "../components/Post";
 import Ad from "../components/AdBox";
-import NovaHistoria from "../components/NovaHistoria"
+import NovaHistoria from "../components/NovaHistoria";
 import plusBtn from "../assets/plusBtn.svg";
+import Perfil from "../components/Perfil";
 
 function Home() {
-  const [navState, setNavState] = useState(1)
-  function criaHistoria() {
-  }
+  const [navState, setNavState] = useState(1);
+  const [showState, setShowState] = useState(false);
+  function criaHistoria() {}
+
   return (
-    <div className="page-container">
-      <Navbar navState={navState}/>
+    <div className="page-container" id="home-page-id">
+      <Navbar navState={navState} />
       <div className="header-content-container">
-        <Header navState={navState}/>
-        <main className="main-section">
+        <Header navState={navState} />
+        <main className="main-section" id="main-section-id">
           <div className="content-container">
             <div className="feed-header-container">
               <div className="feed-greeting">
@@ -24,7 +26,11 @@ function Home() {
                 <p id="feed-subtitle">Bem vindo de volta, Ricardo Milos!</p>
               </div>
               <div id="novaHistoria-container">
-                <img src={plusBtn} alt="Botao nova historia" onClick={criaHistoria()}/>
+                <img
+                  src={plusBtn}
+                  alt="Botao nova historia"
+                  onClick={criaHistoria()}
+                />
                 <p id="novaHistoria">Nova historia</p>
               </div>
             </div>

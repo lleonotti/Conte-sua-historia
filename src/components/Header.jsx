@@ -9,17 +9,16 @@ import arqueira from "../assets/bow.png";
 import barbaro from "../assets/barbarian.png";
 import gatuno from "../assets/thief.png";
 
-
 function Header() {
   return (
     <header id="header-container">
       <div className="user-container">
-        <img className="foto-perfil" src={milos} alt="foto-perfil"  />
+        <img className="foto-perfil" src={milos} alt="foto-perfil" />
         <div id="user-info">
           <p id="user-name">Ricardo Milos</p>
           <p id="user-email">ricardo.milos@gmail.com</p>
         </div>
-        <img id="user-chevron" src={chevron} alt="chevron icon"/>
+        <img id="user-chevron" src={chevron} alt="chevron icon" />
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">
@@ -52,7 +51,16 @@ function Header() {
           alt="Fourth friend"
         />
       </div>
-      <img id="darkMode-icon" src={darkMode} alt="Dark Mode Icon" />
+      <img
+        id="darkMode-icon"
+        src={darkMode}
+        alt="Dark Mode Icon"
+        onClick={() => {
+          const $html = document.querySelector("html");
+          const $checkbox = document.querySelector("#darkMode-icon");
+          $html.classList.toggle("dark-mode");
+        }}
+      />
     </header>
   );
 }

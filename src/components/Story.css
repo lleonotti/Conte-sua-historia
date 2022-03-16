@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-white: #ffffff;
+  --main-red: #cf3a59;
+  --main-blue: #081a51;
+  --main-background: #f8f9ff;
+  --main-lines: #dadada;
+  --btn-blue: #017efa;
+  --font-blue: #51cbff;
+}
+
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "GilroyMedium";
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  src: url(../fonts/Gilroy-Light.ttf);
+}
+
+.story-content-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* min-height: 400px; */
+  /* min-width: 350px; */
+  padding-bottom: 2rem;
+}
+
+.story-title {
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+.story-content {
+  text-align: justify;
+  font-size: 1.2rem;
+  font-family: "GilroyMedium";
+  padding: 0 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100px;
+}
+
+.reactions-container {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 20px;
+  z-index: -1;
+}
+
+.tags-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 20px;
+  margin-bottom: 1rem;
+}
+
+.tags-left {
+  display: flex;
+}

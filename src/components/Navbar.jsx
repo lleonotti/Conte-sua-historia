@@ -9,18 +9,20 @@ import HashtagIcon from "../assets/hashtag-icon.svg";
 import questionIcon from "../assets/qmark-icon.svg";
 import NavItem from "./NavItem";
 
-function Navbar({navState}) {
+function Navbar({ navState }) {
   const [storyCounter, setStoryCounter] = useState(1);
   return (
     <nav id="navbar-container">
-      <div className="logo-container">
-        <img
-          id="logo-img"
-          src="https://cdn-icons-png.flaticon.com/512/3534/3534033.png"
-          alt="logo"
-        />
-        <h1 id="logo-title">Conte Sua Historia</h1>
-      </div>
+      <a className="home-link" href="home">
+        <div className="logo-container">
+          <img
+            id="logo-img"
+            src="https://cdn-icons-png.flaticon.com/512/3534/3534033.png"
+            alt="logo"
+          />
+          <h1 id="logo-title">Conte Sua Historia</h1>
+        </div>
+      </a>
       <h2 className="section-title">Meu perfil</h2>
       <ul id="perfil-grid">
         <li className="li-container">
@@ -30,7 +32,11 @@ function Navbar({navState}) {
           <NavItem title="Histórias favoritas" iconPath={HistoriasIcon} />
         </li>
         <li className="li-container">
-          <NavItem title="Minhas Historias" iconPath={PastaIcon} />
+          <NavItem
+            title="Minhas Historias"
+            iconPath={PastaIcon}
+            href="myStories"
+          />
           <div id="story-counter">
             <p>{storyCounter}</p>
           </div>

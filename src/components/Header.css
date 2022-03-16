@@ -63,19 +63,20 @@ body {
 
 #user-name {
   font-family: "GilroySemiBold";
-  color: black;
+  color: var(--font-black);
   margin: 5px 1rem 0 1rem;
 }
 
 #user-email {
   font-family: "GilroyMedium";
   font-size: 14px;
-  color: black;
+  color: var(--font-black);
   margin: 0 1rem 0.25rem 1rem;
 }
 
 #user-chevron {
   transform: rotateZ(-90deg);
+  color: var(--font-black);
 }
 #user-chevron:hover {
   animation-fill-mode: forwards;
@@ -85,7 +86,7 @@ body {
 }
 .search-bar-container {
   padding: 15px 60px;
-  background-color: var(--main-white);
+  background-color: var(--search);
   margin: 0.5rem 0 0.5rem 2rem;
   border-radius: 8px;
   background-image: url("../assets/search-icon.svg");

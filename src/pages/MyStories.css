@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-white: #ffffff;
+  --main-red: #cf3a59;
+  --main-blue: #081a51;
+  --btn-blue: #017efa;
+  --font-blue: #51cbff;
+  --main-background: #f8f9ff;
+}
+* {
+  font-family: "GilroyMedium", "GilroyThin", "GilroySemiBold", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "GilroyThin";
+  src: url(../fonts/Gilroy-Thin.ttf);
+}
+
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+body {
+  font-family: "GilroyMedium", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--main-white);
+  background-color: var(--main-background);
+}
+
+.myStories-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.myStories-main-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-content-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.myStories-content-container {
+  display: grid;
+  /* position: relative; */
+  width: 100%;
+  grid-template-areas:
+    "header header"
+    "story  story";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  margin: 70px 283px 0 300px;
+}
+
+.story-greeting {
+  margin: 2rem 0 1rem 2rem;
+  grid-area: header;
+}
+
+#story-title {
+  font-family: "GilroySemiBold";
+  font-size: 32px;
+  color: var(--feed-title);
+}
+
+#story-subtitle {
+  font-family: "GilroyMedium";
+  font-size: 16px;
+  color: var(--feed-subtitle);
+}
