@@ -92,7 +92,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 400px;
+  min-height: fit-content;
   min-width: 350px;
   padding-bottom: 2rem;
 }

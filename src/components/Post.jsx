@@ -38,29 +38,12 @@ function Post() {
         <section className="post-content-container">
           <p className="post-title">O dia que virei um meme</p>
           <p className="post-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            autem iure ipsa minima quod culpa animi facilis laborum iste totam
-            corporis ab illo officia cumque corrupti at velit, soluta adipisci
-            ex neque, tempora earum perferendis repudiandae. Neque laudantium
-            rem, beatae nemo, fugit accusantium assumenda officia, quisquam
-            expedita nobis quae ipsam molestias necessitatibus commodi. Illo
-            aliquam, voluptatem hic explicabo a, quibusdam aliquid at sunt velit
-            autem praesentium provident veniam debitis adipisci quis accusamus
-            omnis asperiores itaque! Quibusdam unde similique maxime libero rem?
-            Sequi ut aliquid perspiciatis odio ex aspernatur reprehenderit
-            exercitationem sapiente, quod tempore excepturi, voluptate quos,
-            natus numquam minima sint eius? Aliquam ipsam soluta earum
-            doloribus, quos itaque minus praesentium libero cumque beatae nulla
-            animi maiores quo architecto ut iusto distinctio debitis, sed
-            nostrum! Illo vel doloribus officia sunt, ea, rem magni maxime
-            voluptate porro, laudantium ducimus. Sit delectus, corporis fuga
-            praesentium reiciendis et quos non asperiores aut libero numquam
-            modi, perferendis, dolor laboriosam. Distinctio qui voluptates, odit
-            reprehenderit porro amet esse officiis delectus magnam doloremque
-            sapiente, minima quam fugit, enim ullam eaque in dicta fuga.
-            Nesciunt voluptate nostrum fugiat doloremque ullam magnam suscipit
-            culpa, vitae quos minus alias corporis? At eveniet, odit
-            necessitatibus aperiam maxime ratione quidem alias sunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            repudiandae aliquam, quia rerum pariatur nostrum numquam voluptate
+            quibusdam iste est! Ducimus illum expedita, quae laboriosam
+            doloremque autem animi aperiam sit tempore iusto quidem obcaecati
+            molestias distinctio iure facere, veritatis officiis magni quasi?
+            Nam minima dolore tempore maxime optio quasi vero voluptatem
           </p>
         </section>
         <section className="reactions-container">

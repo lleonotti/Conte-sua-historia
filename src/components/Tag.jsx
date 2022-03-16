@@ -2,7 +2,7 @@ import React from "react";
 import "./Tag.css";
 
 function Tag({ tag, src }) {
-  if (src == undefined)  {
+  if (src == undefined) {
     return (
       <div className="tags">
         <a className="tag-text" href="">
@@ -10,8 +10,7 @@ function Tag({ tag, src }) {
         </a>
       </div>
     );
-  } 
-  else {
+  } else {
     return (
       <div className="tags">
         <img src={src} alt="Imagem tag" />

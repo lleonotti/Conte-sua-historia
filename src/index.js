@@ -18,6 +18,7 @@ ReactDOM.render(
       <Route path="/home" element={<Home />} />
       <Route path="/myStories" element={<MyStories />} />
       <Route path="/story" element={<Story />} />
+      <Route path="/new" element={<NovaHistoria />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

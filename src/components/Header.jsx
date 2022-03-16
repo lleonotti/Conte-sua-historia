@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import earth from "../assets/planet-earth.png";
 import milos from "../assets/milos.jpg";
@@ -10,6 +10,21 @@ import barbaro from "../assets/barbarian.png";
 import gatuno from "../assets/thief.png";
 
 function Header() {
+  const [status, setStatus] = useState("Online");
+  const [statusColor, setStatusColor] = useState("user-status-text");
+  const [dotColor, setDotColor] = useState("dot-status");
+
+  function handleStatus() {
+    if (status == "Online") {
+      setStatus("Offline");
+      setStatusColor("user-status-text-off");
+      setDotColor("dot-status-off");
+    } else {
+      setStatus("Online");
+      setStatusColor("user-status-text");
+      setDotColor("dot-status");
+    }
+  }
   return (
     <header id="header-container">
       <div className="user-container">
@@ -22,8 +37,14 @@ function Header() {
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">
-        <span class="dot-status"></span>
-        <p id="user-status-text">Online</p>
+        <span class={dotColor}></span>
+        <p
+          className={statusColor}
+          id="user-status-text-id"
+          onClick={() => handleStatus()}
+        >
+          {status}
+        </p>
       </div>
       <div className="friends-container">
         <img
