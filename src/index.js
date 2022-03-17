@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import Home from "./pages/Home";
@@ -14,7 +14,7 @@ import Missing from "./pages/Missing";
 import "./index.css";
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <HashRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="*" element={<Missing />} />
       <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ ReactDOM.render(
       <Route path="/story" element={<Story />} />
       <Route path="/new" element={<NovaHistoria />} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
 
