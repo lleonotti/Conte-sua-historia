@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Post from "./components/Post";
 import Home from "./pages/Home";
@@ -14,16 +14,16 @@ import Missing from "./pages/Missing";
 import "./index.css";
 
 ReactDOM.render(
-  <BrowserRouter basename="Conte-sua-historia">
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="*" element={<Missing />} />
       <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
+      <Route exact path="/home" element={<Home />} />
       <Route path="/myStories" element={<MyStories />} />
       <Route path="/story" element={<Story />} />
       <Route path="/new" element={<NovaHistoria />} />
     </Routes>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById("root")
 );
 
