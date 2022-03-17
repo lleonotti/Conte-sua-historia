@@ -4,21 +4,20 @@ import Perfil from "./Perfil";
 
 function NavItem({ title, iconPath, href }) {
   const [isOpen, setIsOpen] = useState(false);
+
   if (title == "Perfil") {
     return (
       <div>
-        <a
-          className="nav-link"
-          type="button"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <a className="nav-link" type="button" onClick={() => setIsOpen(true)}>
           <img className="nav-icon" src={iconPath} />
           <p className="nav-text">{title}</p>
         </a>
         <Perfil
           open={isOpen}
-          blur={isOpen}
-          onClose={() => setIsOpen(false)}
+          onClose={() => {
+            setIsOpen(false);
+            document.getElementById("root").style.filter = "blur(0px)";
+          }}
         ></Perfil>
       </div>
     );

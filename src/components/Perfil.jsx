@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import ReactDom from "react-dom";
 import milos from "../assets/milos.jpg";
 import quit from "../assets/quit-icon.svg";
 import lapiz from "../assets/lapiz.svg";
 import "./Perfil.css";
 
-function Perfil({ open, blur, onClose }) {
+function Perfil({ open, onClose }) {
   const [disable, setDisabled] = useState(true);
   const [name, setName] = useState("Strogonoff");
 
@@ -12,18 +13,19 @@ function Perfil({ open, blur, onClose }) {
     setDisabled(false);
   };
 
-  if (!open) {
-    return null;
-  } else {
-    if (!blur) {
-      // document.getElementById("home-page-id").style.filter = "blur(8px)";
-    }
-  }
-  return (
+  if (!open) return null;
+  else document.getElementById("root").style.filter = "blur(8px)";
+
+  return ReactDom.createPortal(
     <div className="perfil-container">
       <section className="tags-container">
         <div className="tags-left"></div>
-        <img id="button-quit-post" src={quit} alt="Botao sair" />
+        <img
+          id="button-quit-post"
+          src={quit}
+          alt="Botao sair"
+          onClick={onClose}
+        />
       </section>
       <div className="post-container">
         <header className="post-header">
@@ -47,12 +49,13 @@ function Perfil({ open, blur, onClose }) {
                     type="text"
                     id="nome-input"
                     disabled={disable}
-                    value={""}
+                    // value={""}
                     onChange={(e) => setName(e.target.value)}
+                    placeholder="Seu nome"
                   />
                   <button
                     id="editNome"
-                    className="buttonInput"
+                    className="buttonInput-form-g"
                     type="button"
                     onClick={enableEditing}
                   >
@@ -69,12 +72,13 @@ function Perfil({ open, blur, onClose }) {
                     type="text"
                     id="email"
                     disabled={disable}
-                    value={""}
+                    // value={""}
                     onChange={(e) => setName(e.target.value)}
+                    placeholder="user@email.com.br"
                   />
                   <button
                     id="editEmail"
-                    className="buttonInput"
+                    className="buttonInput-form-g"
                     type="button"
                     onClick={enableEditing}
                   >
@@ -92,12 +96,13 @@ function Perfil({ open, blur, onClose }) {
                       type="text"
                       id="genero-form"
                       disabled={disable}
-                      value={""}
+                      // value={""}
                       onChange={(e) => setName(e.target.value)}
+                      placeholder="Meu gênero"
                     />
                     <button
                       id="edit-genero"
-                      className="buttonInput"
+                      className="buttonInput-form-m"
                       type="button"
                       onClick={enableEditing}
                     >
@@ -114,12 +119,13 @@ function Perfil({ open, blur, onClose }) {
                       type="number"
                       id="numeroCelular"
                       disabled={disable}
-                      value={""}
+                      // value={""}
                       onChange={(e) => setName(e.target.value)}
+                      placeholder="(99)99999-9999"
                     />
                     <button
                       id="editNome"
-                      className="buttonInput"
+                      className="buttonInput-form-m"
                       type="button"
                       onClick={enableEditing}
                     >
@@ -136,12 +142,12 @@ function Perfil({ open, blur, onClose }) {
                       type="date"
                       id="dataNascimento-form"
                       disabled={disable}
-                      value={""}
+                      // value={""}
                       onChange={(e) => setName(e.target.value)}
                     />
                     <button
                       id="edit-dataNascimento"
-                      className="buttonInput"
+                      className="buttonInput-form-m"
                       type="button"
                       onClick={enableEditing}
                     >
@@ -841,7 +847,7 @@ function Perfil({ open, blur, onClose }) {
                       className="fileInput"
                       type="file"
                       id="enviarFoto"
-                      value={""}
+                      // value={""}
                       onChange={(e) => setName(e.target.value)}
                     />
                     Enviar uma foto
@@ -862,12 +868,13 @@ function Perfil({ open, blur, onClose }) {
                   type="text"
                   id="endereco"
                   disabled={disable}
-                  value={""}
+                  // value={""}
                   onChange={(e) => setName(e.target.value)}
+                  placeholder="Avenida Brasil, 123"
                 />
                 <button
                   id="editEndereco"
-                  className="buttonInput"
+                  className="buttonInput-form-g"
                   type="button"
                   onClick={enableEditing}
                 >
@@ -879,7 +886,11 @@ function Perfil({ open, blur, onClose }) {
           </section>
           <section className="buttons-section">
             <div className="perfil-btn-container">
-              <button className="perfil-btn" id="cancelar-btn">
+              <button
+                className="perfil-btn"
+                id="cancelar-btn"
+                onClick={onClose}
+              >
                 Cancelar
               </button>
               <button className="perfil-btn" id="salvar-btn">
@@ -889,7 +900,8 @@ function Perfil({ open, blur, onClose }) {
           </section>
         </form>
       </div>
-    </div>
+    </div>,
+    document.getElementById("portal")
   );
 }
 

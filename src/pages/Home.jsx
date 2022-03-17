@@ -11,7 +11,7 @@ import Perfil from "../components/Perfil";
 function Home() {
   const [navState, setNavState] = useState(1);
   const [showState, setShowState] = useState(false);
-  function criaHistoria() {}
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="page-container" id="home-page-id">
@@ -25,11 +25,17 @@ function Home() {
                 <h2 id="feed-title">Seu feed</h2>
                 <p id="feed-subtitle">Bem vindo de volta, Ricardo Milos!</p>
               </div>
-              <div id="novaHistoria-container">
-                <img
-                  src={plusBtn}
-                  alt="Botao nova historia"
-                  onClick={criaHistoria()}
+              <div
+                id="novaHistoria-container"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                <img src={plusBtn} alt="Botao nova historia" />
+                <NovaHistoria
+                  open={isOpen}
+                  onClose={() => {
+                    setIsOpen(false);
+                    document.getElementById("root").style.filter = "blur(0px)";
+                  }}
                 />
                 <p id="novaHistoria">Nova historia</p>
               </div>

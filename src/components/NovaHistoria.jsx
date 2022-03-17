@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactDom from "react-dom";
 import "./Post.css";
 import "./NovaHistoria.css";
 import calendar from "../assets/calendar-icon.svg";
@@ -7,13 +8,11 @@ import heisenberg from "../assets/heisenberg.jpg";
 import quit from "../assets/quit-icon.svg";
 import Tag from "./Tag";
 
-function NovaHistoria() {
+function NovaHistoria({ open, onClose }) {
   const [anonState, setAnonState] = useState("Modo anônimo desativado");
   const [userAnon, setUserAnon] = useState("Username");
   const [userPic, setUserPic] = useState(milos);
   const [tag1, setTag1] = useState("tag1");
-
-  // <input className="tag-text" placeholder="tag" value={"#" + tag} />
 
   function checkAnonState() {
     if (anonState == "Modo anônimo desativado") {
@@ -26,15 +25,24 @@ function NovaHistoria() {
       setUserPic(milos);
     }
   }
-  return (
-    <div className="postAndtags-container">
-      <section className="tags-container">
+
+  if (!open) return null;
+  else document.getElementById("root").style.filter = "blur(8px)";
+
+  return ReactDom.createPortal(
+    <div className="newPostAndtags-container ">
+      <section className="newPost-tags-container">
         <div className="tags-left">
           <Tag tag="yolo" />
           <Tag tag="yolo" />
           <Tag tag="yolo" />
         </div>
-        <img id="button-quit-post" src={quit} alt="Botao sair" />
+        <img
+          id="button-quit-post"
+          src={quit}
+          alt="Botao sair"
+          // onClick={onClose}
+        />
       </section>
       <div className="newPost-container">
         <header className="post-header">
@@ -78,7 +86,8 @@ function NovaHistoria() {
           </div>
         </section>
       </div>
-    </div>
+    </div>,
+    document.getElementById("portal")
   );
 }
 

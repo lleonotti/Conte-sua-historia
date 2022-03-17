@@ -60,7 +60,7 @@
   z-index: -1;
 }
 
-.tags-container {
+.story-tags-container {
   display: flex;
   justify-content: space-between;
   flex-direction: row;

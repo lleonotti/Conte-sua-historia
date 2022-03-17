@@ -12,7 +12,7 @@ import Tag from "./Tag";
 function Story() {
   return (
     <div className="postAndtags-container">
-      <section className="tags-container">
+      <section className="story-tags-container">
         <div className="tags-left">
           <Tag tag="yolo" />
           <Tag tag="yolo" />
