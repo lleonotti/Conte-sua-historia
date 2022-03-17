@@ -65,7 +65,6 @@ body {
 }
 
 .post-image-container {
-  /* border: 3px solid var(--main-white); */
   border-radius: 10px;
   width: 40px;
   height: 40px;

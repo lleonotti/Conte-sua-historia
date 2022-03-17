@@ -14,7 +14,7 @@ import Missing from "./pages/Missing";
 import "./index.css";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path="*" element={<Missing />} />
       <Route path="/" element={<Home />} />
