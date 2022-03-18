@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Conte-sua-historia/static/css/main.35f4c844.css",
-    "main.js": "/Conte-sua-historia/static/js/main.f709097c.js",
+    "main.css": "/Conte-sua-historia/static/css/main.046590cd.css",
+    "main.js": "/Conte-sua-historia/static/js/main.3a08f6fd.js",
     "static/media/topTags.svg": "/Conte-sua-historia/static/media/topTags.0f0dd8818cf67497a704453b50f155e9.svg",
     "static/media/404.png": "/Conte-sua-historia/static/media/404.527516a4327d9e49d659.png",
     "static/media/Gilroy-Thin.ttf": "/Conte-sua-historia/static/media/Gilroy-Thin.28f856b7c4b3d473e0d1.ttf",
@@ -14,7 +14,7 @@
     "static/media/wizard.png": "/Conte-sua-historia/static/media/wizard.7db7139d05d0b5de7ce7.png",
     "static/media/milos.jpg": "/Conte-sua-historia/static/media/milos.a689d83572837891de73.jpg",
     "static/media/instagram.png": "/Conte-sua-historia/static/media/instagram.6030a8815dc4d150b086.png",
-    "static/media/planet-earth.png": "/Conte-sua-historia/static/media/planet-earth.0e1b526190733006b70a.png",
+    "static/media/csh-icon.png": "/Conte-sua-historia/static/media/csh-icon.595b30a531e82079d4f0.png",
     "static/media/darkMode-icon.svg": "/Conte-sua-historia/static/media/darkMode-icon.e705c9c046e4bc21fcbc1f2c9c8a725a.svg",
     "static/media/reddit.png": "/Conte-sua-historia/static/media/reddit.cb3da413fcb2b90cf7d4.png",
     "static/media/heisenberg.jpg": "/Conte-sua-historia/static/media/heisenberg.767973f036144af440ca.jpg",
@@ -37,11 +37,11 @@
     "static/media/Perfil-icon.svg": "/Conte-sua-historia/static/media/Perfil-icon.7f3eb02eb9608c1193a0ab6a7138a051.svg",
     "static/media/chevronBlue-icon.svg": "/Conte-sua-historia/static/media/chevronBlue-icon.a2d6027921cca8b61c2a9448b6f197e4.svg",
     "static/media/chevron-icon.svg": "/Conte-sua-historia/static/media/chevron-icon.1ee39a197a6c91fe45105b106b5733ec.svg",
-    "main.35f4c844.css.map": "/Conte-sua-historia/static/css/main.35f4c844.css.map",
-    "main.f709097c.js.map": "/Conte-sua-historia/static/js/main.f709097c.js.map"
+    "main.046590cd.css.map": "/Conte-sua-historia/static/css/main.046590cd.css.map",
+    "main.3a08f6fd.js.map": "/Conte-sua-historia/static/js/main.3a08f6fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.35f4c844.css",
-    "static/js/main.f709097c.js"
+    "static/css/main.046590cd.css",
+    "static/js/main.3a08f6fd.js"
   ]
 }
