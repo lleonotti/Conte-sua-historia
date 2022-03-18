@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "./NavItem.css";
 import Perfil from "./Perfil";
 
 function NavItem({ title, iconPath, href }) {
   const [isOpen, setIsOpen] = useState(false);
-
   if (title == "Perfil") {
     return (
       <div>
@@ -23,10 +23,10 @@ function NavItem({ title, iconPath, href }) {
     );
   }
   return (
-    <a className="nav-link" href={href}>
+    <Link to={String(href)} className="nav-link">
       <img className="nav-icon" src={iconPath} />
       <p className="nav-text">{title}</p>
-    </a>
+    </Link>
   );
 }
 

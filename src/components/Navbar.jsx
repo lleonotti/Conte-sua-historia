@@ -8,12 +8,13 @@ import FileIcon from "../assets/file-icon.svg";
 import HashtagIcon from "../assets/hashtag-icon.svg";
 import questionIcon from "../assets/qmark-icon.svg";
 import NavItem from "./NavItem";
+import { Link } from "react-router-dom";
 
 function Navbar({ navState }) {
   const [storyCounter, setStoryCounter] = useState(1);
   return (
     <nav id="navbar-container">
-      <a className="home-link" href="home">
+      <Link className="home-link" to="/home">
         <div className="logo-container">
           <img
             id="logo-img"
@@ -22,7 +23,7 @@ function Navbar({ navState }) {
           />
           <h1 id="logo-title">Conte Sua Historia</h1>
         </div>
-      </a>
+      </Link>
       <h2 className="section-title">Meu perfil</h2>
       <ul id="perfil-grid">
         <li className="li-container">
@@ -35,7 +36,7 @@ function Navbar({ navState }) {
           <NavItem
             title="Minhas Historias"
             iconPath={PastaIcon}
-            href="myStories"
+            href="/myStories"
           />
           <div id="story-counter">
             <p>{storyCounter}</p>

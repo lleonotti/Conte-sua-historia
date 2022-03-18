@@ -37,7 +37,7 @@ function Header() {
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">
-        <span class={dotColor}></span>
+        <span className={dotColor}></span>
         <p
           className={statusColor}
           id="user-status-text-id"
