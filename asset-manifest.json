@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Conte-sua-historia/static/css/main.092229d3.css",
-    "main.js": "/Conte-sua-historia/static/js/main.d066a88b.js",
+    "main.js": "/Conte-sua-historia/static/js/main.3c9c698d.js",
     "static/media/topTags.svg": "/Conte-sua-historia/static/media/topTags.0f0dd8818cf67497a704453b50f155e9.svg",
     "static/media/404.png": "/Conte-sua-historia/static/media/404.527516a4327d9e49d659.png",
     "static/media/Gilroy-Thin.ttf": "/Conte-sua-historia/static/media/Gilroy-Thin.28f856b7c4b3d473e0d1.ttf",
@@ -38,10 +38,10 @@
     "static/media/chevronBlue-icon.svg": "/Conte-sua-historia/static/media/chevronBlue-icon.a2d6027921cca8b61c2a9448b6f197e4.svg",
     "static/media/chevron-icon.svg": "/Conte-sua-historia/static/media/chevron-icon.1ee39a197a6c91fe45105b106b5733ec.svg",
     "main.092229d3.css.map": "/Conte-sua-historia/static/css/main.092229d3.css.map",
-    "main.d066a88b.js.map": "/Conte-sua-historia/static/js/main.d066a88b.js.map"
+    "main.3c9c698d.js.map": "/Conte-sua-historia/static/js/main.3c9c698d.js.map"
   },
   "entrypoints": [
     "static/css/main.092229d3.css",
-    "static/js/main.d066a88b.js"
+    "static/js/main.3c9c698d.js"
   ]
 }
