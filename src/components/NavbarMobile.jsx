@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import ReactDom from "react-dom";
+import "./NavbarMobile.css";
 import csh from "../assets/csh-icon.png";
 import PerfilIcon from "../assets/Perfil-icon.svg";
 import HistoriasIcon from "../assets/MinhasHistorias-icon.svg";
@@ -11,13 +12,15 @@ import questionIcon from "../assets/qmark-icon.svg";
 import NavItem from "./NavItem";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavbarMobile({ open, onClose }) {
   const [storyCounter, setStoryCounter] = useState(1);
-  return (
+
+  if (!open) return null;
+  return ReactDom.createPortal(
     <nav id="navbar-container">
       <Link className="home-link" to="/home">
         <div className="logo-container">
-          <img id="logo-img" src={csh} alt="logo" />
+          <img id="logo-img" src={csh} alt="logo" onClick={onClose} />
           <h1 id="logo-title">Conte Sua Historia</h1>
         </div>
       </Link>
@@ -74,8 +77,9 @@ function Navbar() {
           Menu de ajuda
         </button>
       </div>
-    </nav>
+    </nav>,
+    document.getElementById("portal")
   );
 }
 
-export default Navbar;
+export default NavbarMobile;

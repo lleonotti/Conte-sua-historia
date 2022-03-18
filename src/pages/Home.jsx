@@ -26,7 +26,8 @@ function Home() {
                 <p id="feed-subtitle">Bem vindo de volta, Ricardo Milos!</p>
               </div>
               <div
-                id="novaHistoria-container"
+                className="novaHistoria-container"
+                id="novaHistoria-container-id"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 <img
@@ -40,7 +41,7 @@ function Home() {
                     setIsOpen(false);
                     document.getElementById("root").style.filter = "blur(0px)";
                   }}
-                />
+                ></NovaHistoria>
                 <p id="novaHistoria">Nova historia</p>
               </div>
             </div>

@@ -149,7 +149,7 @@ select {
 }
 
 #cancelar-btn {
-  box-shadow: 0 0 40px 40px var(--main-white) inset;
+  box-shadow: 0 0 40px 40px #fafafa inset;
   color: black;
 }
 #salvar-btn {
@@ -163,7 +163,7 @@ select {
   border-radius: 6px;
   font-family: "GilroyMedium", sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: var(--main-post);
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ select {
   position: relative;
   cursor: pointer;
 
-  background-color: #f4f4f4;
+  background-color: var(--enviar-btn);
   text-align: center;
   border-radius: 6px;
   font-family: "GilroySemiBold", sans-serif;

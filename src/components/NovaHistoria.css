@@ -75,6 +75,7 @@ body {
   padding: 2rem 4rem;
   font-size: 2rem;
   outline: none;
+  background-color: var(--main-post);
 }
 
 .newPost-content {
@@ -83,6 +84,7 @@ body {
   height: auto;
   font-family: "GilroyMedium";
   padding: 0 4rem;
+  background-color: var(--main-post);
 }
 #new-post-content {
   display: flex;

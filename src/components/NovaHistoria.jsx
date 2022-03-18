@@ -41,7 +41,7 @@ function NovaHistoria({ open, onClose }) {
           id="button-quit-post"
           src={quit}
           alt="Botao sair"
-          // onClick={onClose}
+          onClick={onClose}
         />
       </section>
       <div className="newPost-container">
