@@ -11,7 +11,7 @@ import "./index.css";
 ReactDOM.render(
   <Router basename="/Conte-sua-historia">
     <Routes>
-      <Route path="/*" element={<Missing />} />
+      <Route path="*" element={<Missing />} />
       <Route path="/" element={<Home />} />
       <Route exact path="/home" element={<Home />} />
       <Route exact path="/myStories" element={<MyStories />} />
