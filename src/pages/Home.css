@@ -23,7 +23,6 @@
   --tags: #ffffff;
   --search: #ffffff;
   --glow: #f1f2fa;
-
 }
 
 .dark-mode:root {
@@ -99,25 +98,30 @@ body {
   /* border-right: 1px solid var(--main-lines); */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
+  .page-container {
+  
+}
   .content-container {
-    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 70px 12.5px;
   }
 }
 .feed-header-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .feed-greeting {
-  margin: 2rem 0 1rem 2rem;
+  padding: 0.5rem 0 1rem 0.5rem;
 }
 
 #feed-title {
   font-family: "GilroySemiBold";
   font-size: 32px;
   color: var(--feed-title);
+  flex-grow: 2;
 }
 
 #feed-subtitle {
@@ -126,22 +130,21 @@ body {
   color: var(--feed-subtitle);
 }
 
+#btn-newStory{
+  width: 80px;
+}
 #novaHistoria-container {
+  position: fixed;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 0 1rem;
-  color: black;
-  font-size: 20px;
-  font-family: "GilroySemiBold";
+  bottom: 0; 
+  right: 0;
   cursor: pointer;
 }
 
 #novaHistoria {
   color: var(--font-black);
   margin: 0 0.5rem;
+  display: none;
 }
 /* .page-container {
   display: grid;

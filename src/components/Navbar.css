@@ -160,6 +160,7 @@ body {
 
 @media (max-width: 768px) {
   #navbar-container {
+    /* position: absolute; */
     display: none;
   }
 }

@@ -13,7 +13,7 @@ function Story() {
   return (
     <div className="postAndtags-container">
       <section className="story-tags-container">
-        <div className="tags-left">
+        <div className="story-tags-left">
           <Tag tag="yolo" />
           <Tag tag="yolo" />
           <Tag tag="yolo" />

@@ -29,7 +29,11 @@ function Home() {
                 id="novaHistoria-container"
                 onClick={() => setIsOpen(!isOpen)}
               >
-                <img src={plusBtn} alt="Botao nova historia" />
+                <img
+                  src={plusBtn}
+                  alt="Botao nova historia"
+                  id="btn-newStory"
+                />
                 <NovaHistoria
                   open={isOpen}
                   onClose={() => {
