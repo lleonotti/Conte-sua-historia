@@ -80,7 +80,7 @@ function NovaHistoria({ open, onClose }) {
               <p id="anon-status">{anonState}</p>
             </div>
 
-            <button id="post-btn" className="main-btn" type="button">
+            <button id="post-btn" className="newStory-main-btn" type="button">
               Postar
             </button>
           </div>
