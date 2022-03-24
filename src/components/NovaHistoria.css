@@ -197,6 +197,11 @@ input:checked + .slider:before {
   transition: all 150ms ease-in-out;
 }
 
+.newStory-main-btn:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
 @media (max-width: 425px) {
   .newPostAndtags-container {
     position: fixed;

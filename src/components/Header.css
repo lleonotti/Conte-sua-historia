@@ -222,7 +222,7 @@ body {
     padding: 10px;
     /* margin: 0.5rem 0 0.5rem 0; */
     border-right: 1px solid var(--main-lines);
-    flex-grow: 1;
+    flex-grow: 0.25;
   }
 
   .search-bar-container {

@@ -11,8 +11,7 @@ import questionIcon from "../assets/qmark-icon.svg";
 import NavItem from "./NavItem";
 import { Link } from "react-router-dom";
 
-function Navbar() {
-  const [storyCounter, setStoryCounter] = useState(1);
+function Navbar({ posts }) {
   return (
     <nav id="navbar-container">
       <Link className="home-link" to="/home">
@@ -36,7 +35,7 @@ function Navbar() {
             href="/myStories"
           />
           <div id="story-counter">
-            <p>{storyCounter}</p>
+            <p>{posts}</p>
           </div>
         </li>
       </ul>

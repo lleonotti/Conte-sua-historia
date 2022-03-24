@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import calendar from "../assets/calendar-icon.svg";
 import "./Post.css";
 import milos from "../assets/milos.jpg";
@@ -9,7 +9,13 @@ import share from "../assets/share-icon.svg";
 import Reaction from "./Reaction";
 import Tag from "./Tag";
 
-function Post() {
+function Post({ title, content, storyUserPhoto }) {
+  const [userPic, setUserPic] = useState(milos);
+
+  // const handlePic = () => {
+  //   setUserPic(storyUserPhoto);
+  // };
+
   return (
     <div className="postAndtags-container">
       <section className="tags-container">
@@ -25,7 +31,7 @@ function Post() {
           <div className="post-userInfo">
             <img
               className="post-image-container"
-              src={milos}
+              src={storyUserPhoto}
               alt="Foto de Perfil"
             />
             <p className="post-username">@ Ricardo Milos</p>
@@ -36,15 +42,8 @@ function Post() {
           </div>
         </header>
         <section className="post-content-container">
-          <p className="post-title">O dia que virei um meme</p>
-          <p className="post-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            repudiandae aliquam, quia rerum pariatur nostrum numquam voluptate
-            quibusdam iste est! Ducimus illum expedita, quae laboriosam
-            doloremque autem animi aperiam sit tempore iusto quidem obcaecati
-            molestias distinctio iure facere, veritatis officiis magni quasi?
-            Nam minima dolore tempore maxime optio quasi vero voluptatem
-          </p>
+          <p className="post-title">{title}</p>
+          <p className="post-content">{content}</p>
         </section>
         <section className="reactions-container">
           <Reaction src={star} />
