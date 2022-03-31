@@ -104,13 +104,13 @@ function NovaHistoria({
                 id="post-btn"
                 className="newStory-main-btn"
                 type="button"
-                onClick={async () => {
-                  await setNewStoryTitle(storyTitle);
-                  await setNewStoryContent(storyContent);
+                onClick={() => {
+                  setNewStoryTitle(storyTitle);
+                  setNewStoryContent(storyContent);
                   if (anonState == "Modo anônimo ativado")
-                    await setStoryUserPhoto(heisenberg);
+                    setStoryUserPhoto(heisenberg);
                   else setStoryUserPhoto(milos);
-                  await createStory();
+                  createStory();
                 }}
               >
                 Postar

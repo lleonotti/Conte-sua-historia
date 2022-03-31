@@ -5,9 +5,11 @@ import Header from "../components/Header";
 import Post from "../components/Post";
 import Ad from "../components/AdBox";
 import NovaHistoria from "../components/NovaHistoria";
+import HistoriaList from "../components/HistoriaList";
 import plusBtn from "../assets/plusBtn.svg";
 import Perfil from "../components/Perfil";
 import milos from "../assets/milos.jpg";
+import { v4 as uuidv4 } from "uuid";
 
 function Home() {
   const [navState, setNavState] = useState(1);
@@ -19,6 +21,7 @@ function Home() {
   const [storyCounter, setStoryCounter] = useState(1);
   const [posts, setPosts] = useState([
     <Post
+      key={uuidv4()}
       title="O dia que virei um meme"
       content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae aliquam, quia rerum pariatur nostrum numquam voluptate quibusdam iste est! Ducimus illum expedita, quae laboriosam doloremque autem animi aperiam sit tempore iusto quidem obcaecati molestias distinctio iure facere, veritatis officiis magni quasi? Nam minima dolore tempore maxime optio quasi vero voluptatem"
       storyUserPhoto={milos}
@@ -26,9 +29,10 @@ function Home() {
   ]);
 
   const createStory = async () => {
-    await setPosts((posts) => [
+    setPosts((posts) => [
       ...posts,
       <Post
+        key={uuidv4()}
         title={newStoryTitle}
         content={newStorycontent}
         storyUserPhoto={storyUserPhoto}
@@ -73,9 +77,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            {posts}
-            {/* <button className="main-btn">{newStoryTitle}</button> */}
-            {/* <img src={storyUserPhoto} alt="" /> */}
+            <HistoriaList />
           </div>
           <Ad />
         </main>
