@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import Post from "../components/Post";
 import Ad from "../components/AdBox";
 import NovaHistoria from "../components/NovaHistoria";
-import HistoriaList from "../components/HistoriaList";
 import plusBtn from "../assets/plusBtn.svg";
 import Perfil from "../components/Perfil";
 import milos from "../assets/milos.jpg";
@@ -15,10 +14,15 @@ function Home() {
   const [navState, setNavState] = useState(1);
   const [showState, setShowState] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [newStoryTitle, setNewStoryTitle] = useState("");
-  const [newStorycontent, setNewStoryContent] = useState("");
   const [storyUserPhoto, setStoryUserPhoto] = useState("");
   const [storyCounter, setStoryCounter] = useState(1);
+  const [newStory, setNewStory] = useState({
+    key: uuidv4,
+    title: "",
+    content: "",
+    isAnonymous: false,
+    photo: milos,
+  });
   const [posts, setPosts] = useState([
     <Post
       key={uuidv4()}
@@ -28,17 +32,6 @@ function Home() {
     />,
   ]);
 
-  const createStory = async () => {
-    setPosts((posts) => [
-      ...posts,
-      <Post
-        key={uuidv4()}
-        title={newStoryTitle}
-        content={newStorycontent}
-        storyUserPhoto={storyUserPhoto}
-      ></Post>,
-    ]);
-  };
   return (
     <div className="page-container" id="home-page-id">
       <Navbar navState={navState} posts={posts.length} />
@@ -63,21 +56,20 @@ function Home() {
                 />
                 <NovaHistoria
                   open={isOpen}
-                  setNewStoryTitle={setNewStoryTitle}
-                  setNewStoryContent={setNewStoryContent}
                   onClose={() => {
                     setIsOpen(0);
                     document.getElementById("root").style.filter = "blur(0px)";
                   }}
-                  createStory={createStory}
-                  setStoryUserPhoto={setStoryUserPhoto}
+                  newStory={newStory}
+                  setNewStory={setNewStory}
+                  setPosts={setPosts}
                 ></NovaHistoria>
                 <p id="novaHistoria" onClick={() => setIsOpen(!isOpen)}>
                   Nova historia{" "}
                 </p>
               </div>
             </div>
-            <HistoriaList />
+            {posts}
           </div>
           <Ad />
         </main>
