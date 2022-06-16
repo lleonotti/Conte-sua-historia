@@ -29,13 +29,13 @@ function NovaHistoria(props) {
     event.preventDefault();
     props.setPosts((prevPosts) => {
       return [
-        ...prevPosts,
         <Post
           key={uuidv4()}
           title={props.newStory.title}
           content={props.newStory.content}
           storyUserPhoto={props.newStory.photo}
         />,
+        ...prevPosts,
       ];
     });
     props.onClose();

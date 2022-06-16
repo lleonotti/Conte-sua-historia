@@ -7,7 +7,7 @@ import bruxo from "../assets/wizard.png";
 import arqueira from "../assets/bow.png";
 import barbaro from "../assets/barbarian.png";
 import gatuno from "../assets/thief.png";
-import NavbarMobile from "./NavbarMobile";
+import Navbar from "../components/Navbar";
 
 function Header() {
   const [status, setStatus] = useState("Online");
@@ -42,13 +42,6 @@ function Header() {
             setIsOpen(true);
           }}
         />
-        <NavbarMobile
-          open={isOpen}
-          onClose={() => {
-            setIsOpen(false);
-            document.getElementById("root").style.filter = "blur(0px)";
-          }}
-        ></NavbarMobile>
       </div>
       <input className="search-bar-container" placeholder="Search..."></input>
       <div className="user-status-container">
