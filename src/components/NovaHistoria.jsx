@@ -41,9 +41,24 @@ function NovaHistoria(props) {
                     storyUserPhoto={
                         props.newStory.isAnonymous ? heisenberg : milos
                     }
+                    tag1={props.newStory.tag1}
+                    tag2={props.newStory.tag2}
+                    tag3={props.newStory.tag3}
                 />,
                 ...prevPosts,
             ];
+        });
+
+        props.setNewStory({
+            key: uuidv4,
+            userName: "Ricardo Milos",
+            title: "",
+            content: "",
+            isAnonymous: false,
+            photo: milos,
+            tag1: "",
+            tag2: "",
+            tag3: "",
         });
         props.onClose();
     };
@@ -56,9 +71,27 @@ function NovaHistoria(props) {
             <div className="newPostAndtags-container ">
                 <section className="newPost-tags-container">
                     <div className="tags-left">
-                        <Tag tag="yolo" />
-                        <Tag tag="yolo" />
-                        <Tag tag="yolo" />
+                        <input
+                            className="tags"
+                            type="text"
+                            placeholder="Tag 1"
+                            name="tag1"
+                            onChange={handleChange}
+                        />
+                        <input
+                            className="tags"
+                            type="text"
+                            name="tag2"
+                            placeholder="Tag 2"
+                            onChange={handleChange}
+                        />
+                        <input
+                            className="tags"
+                            type="text"
+                            name="tag3"
+                            placeholder="Tag 3"
+                            onChange={handleChange}
+                        />
                     </div>
                     <img
                         id="button-quit-post"

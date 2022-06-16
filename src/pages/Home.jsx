@@ -23,6 +23,9 @@ function Home() {
         content: "",
         isAnonymous: false,
         photo: milos,
+        tag1: "",
+        tag2: "",
+        tag3: "",
     });
     const [posts, setPosts] = useState([
         <Post
@@ -31,6 +34,9 @@ function Home() {
             title="O dia que virei um meme"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repudiandae aliquam, quia rerum pariatur nostrum numquam voluptate quibusdam iste est! Ducimus illum expedita, quae laboriosam doloremque autem animi aperiam sit tempore iusto quidem obcaecati molestias distinctio iure facere, veritatis officiis magni quasi? Nam minima dolore tempore maxime optio quasi vero voluptatem"
             storyUserPhoto={milos}
+            tag1="yolo"
+            tag2="life"
+            tag3="meme"
         />,
     ]);
 

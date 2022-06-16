@@ -9,14 +9,15 @@ import Missing from "./pages/Missing";
 import "./index.css";
 
 ReactDOM.render(
-  <Router basename="/Conte-sua-historia">
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route exact path="/home" element={<Home />} />
-      <Route exact path="/myStories" element={<MyStories />} />
-      <Route path="/story" element={<Story />} />
-      <Route path="/new" element={<NovaHistoria />} />
-    </Routes>
-  </Router>,
-  document.getElementById("root")
+    <Router basename="/Conte-sua-historia">
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
+            <Route exact path="/myStories" element={<MyStories />} />
+            <Route path="/story" element={<Story />} />
+            <Route path="/new" element={<NovaHistoria />} />
+            <Route path="/*" element={<Missing />} />
+        </Routes>
+    </Router>,
+    document.getElementById("root")
 );

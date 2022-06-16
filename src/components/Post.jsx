@@ -9,14 +9,14 @@ import share from "../assets/share-icon.svg";
 import Reaction from "./Reaction";
 import Tag from "./Tag";
 
-function Post({ title, content, storyUserPhoto, userName }) {
+function Post(props) {
     return (
         <div className="postAndtags-container">
             <section className="tags-container">
                 <div className="tags-left">
-                    <Tag tag="yolo" />
-                    <Tag tag="yolo" />
-                    <Tag tag="yolo" />
+                    {props.tag1 !== "" && <Tag tag={props.tag1} />}
+                    {props.tag2 !== "" && <Tag tag={props.tag2} />}
+                    {props.tag3 !== "" && <Tag tag={props.tag3} />}
                 </div>
                 <Tag src={share} />
             </section>
@@ -25,19 +25,21 @@ function Post({ title, content, storyUserPhoto, userName }) {
                     <div className="post-userInfo">
                         <img
                             className="post-image-container"
-                            src={storyUserPhoto}
+                            src={props.storyUserPhoto}
                             alt="Foto de Perfil"
                         />
-                        <p className="post-username">{"@ " + userName}</p>
+                        <p className="post-username">{"@ " + props.userName}</p>
                     </div>
                     <div className="post-dateInfo">
                         <img src={calendar} alt="Icone calendario" />
-                        <p className="post-date">19/01/2022</p>
+                        <p className="post-date">
+                            {new Date().toLocaleDateString()}
+                        </p>
                     </div>
                 </header>
                 <section className="post-content-container">
-                    <p className="post-title">{title}</p>
-                    <p className="post-content">{content}</p>
+                    <p className="post-title">{props.title}</p>
+                    <p className="post-content">{props.content}</p>
                 </section>
                 <section className="reactions-container">
                     <Reaction src={star} />
