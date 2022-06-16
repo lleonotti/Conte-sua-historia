@@ -1,211 +1,211 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-  --main-white: #ffffff;
-  --main-post: #ffffff;
-  --main-shadow: #f1f2fa;
-  --main-red: #cf3a59;
-  --main-blue: #081a51;
-  --main-background: #f8f9ff;
-  --main-lines: #dadada;
-  --btn-blue: #017efa;
-  --font-blue: #51cbff;
-  --font-white: #ffffff;
-  --font-black: #000000;
-  --feed-title: #1c1f37;
-  --feed-subtitle: #6f6f6f;
-  --perma-white: #ffffff;
-  --help-box: #1b2b65;
-  --tags: #ffffff;
-  --search: #ffffff;
-  --glow: #f1f2fa;
-  --enviar-btn: #fafafa;
+    --main-white: #ffffff;
+    --main-post: #ffffff;
+    --main-shadow: #f1f2fa;
+    --main-red: #cf3a59;
+    --main-blue: #081a51;
+    --main-background: #f8f9ff;
+    --main-lines: #dadada;
+    --btn-blue: #017efa;
+    --font-blue: #51cbff;
+    --font-white: #ffffff;
+    --font-black: #000000;
+    --feed-title: #1c1f37;
+    --feed-subtitle: #6f6f6f;
+    --perma-white: #ffffff;
+    --help-box: #1b2b65;
+    --tags: #ffffff;
+    --search: #ffffff;
+    --glow: #f1f2fa;
+    --enviar-btn: #fafafa;
 }
 
 .dark-mode:root {
-  --main-white: #000000;
-  --main-post: #303032;
-  --main-red: #cf3a59;
-  --main-blue: #000000;
-  --main-background: #232324;
-  --main-lines: #dadada;
-  --btn-blue: #017efa;
-  --font-blue: #51cbff;
-  --font-black: #ffffff;
-  --feed-title: #ffffff;
-  --feed-subtitle: #ffffff;
-  --help-box: #434346;
-  --tags: #303032;
-  --search: #434346;
-  --glow: #000000;
-  --enviar-btn: #434346;
+    --main-white: #000000;
+    --main-post: #303032;
+    --main-red: #cf3a59;
+    --main-blue: #000000;
+    --main-background: #232324;
+    --main-lines: #dadada;
+    --btn-blue: #017efa;
+    --font-blue: #51cbff;
+    --font-black: #ffffff;
+    --feed-title: #ffffff;
+    --feed-subtitle: #ffffff;
+    --help-box: #434346;
+    --tags: #303032;
+    --search: #434346;
+    --glow: #000000;
+    --enviar-btn: #434346;
 }
 * {
-  font-family: "GilroyMedium", "GilroyThin", "GilroySemiBold", sans-serif;
-  margin: 0;
-  padding: 0;
-  border: 0;
+    font-family: "GilroyMedium", "GilroyThin", "GilroySemiBold", sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 @font-face {
-  font-family: "GilroyThin";
-  src: url(../fonts/Gilroy-Thin.ttf);
+    font-family: "GilroyThin";
+    src: url(../fonts/Gilroy-Thin.ttf);
 }
 
 @font-face {
-  font-family: "GilroySemiBold";
-  src: url(../fonts/Gilroy-SemiBold.ttf);
+    font-family: "GilroySemiBold";
+    src: url(../fonts/Gilroy-SemiBold.ttf);
 }
 
 ul,
 ol,
 li {
-  list-style: none;
+    list-style: none;
 }
 body {
-  font-family: "GilroyMedium", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  margin: 0;
-  color: var(--main-white);
-  background-color: var(--main-background);
+    font-family: "GilroyMedium", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    color: var(--main-white);
+    background-color: var(--main-background);
 }
 
 .page-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
 }
 .header-content-container {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
 }
 .main-section {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .feed-header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 2rem 0 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0 0 2rem;
 }
 .content-container {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 283px 0 300px;
-  /* border-right: 1px solid var(--main-lines); */
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 283px 0 310px;
+    /* border-right: 1px solid var(--main-lines); */
 }
 
 #btn-newStory {
-  width: 40px;
+    width: 40px;
 }
 .novaHistoria-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 0 1rem;
-  color: black;
-  font-size: 20px;
-  font-family: "GilroySemiBold";
-  cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    color: black;
+    font-size: 20px;
+    font-family: "GilroySemiBold";
+    cursor: pointer;
 }
 
 #novaHistoria {
-  color: var(--font-black);
-  margin: 0 0.5rem;
+    color: var(--font-black);
+    margin: 0 0.5rem;
 }
 
 .feed-header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.feed-greeting {
-  padding: 0.5rem 0 1rem 0.5rem;
-}
-
-#feed-title {
-  font-family: "GilroySemiBold";
-  font-size: 32px;
-  color: var(--feed-title);
-  flex-grow: 2;
-}
-
-#feed-subtitle {
-  font-family: "GilroyMedium";
-  font-size: 16px;
-  color: var(--feed-subtitle);
-}
-
-#btn-newStory {
-  width: 40px;
-}
-
-#novaHistoria-containe-id {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 0 1rem;
-  color: black;
-  font-size: 20px;
-  font-family: "GilroySemiBold";
-  cursor: pointer;
-}
-
-#novaHistoria {
-  color: var(--font-black);
-  margin: 0 0.5rem;
-}
-
-@media (max-width: 425px) {
-  .page-container {
-  }
-  .content-container {
-    display: flex;
-    justify-content: center;
-    margin: 70px 12.5px;
-  }
-
-  .feed-header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-  }
-  .feed-greeting {
+}
+.feed-greeting {
     padding: 0.5rem 0 1rem 0.5rem;
-  }
-  #novaHistoria-container-id {
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-  }
+}
 
-  #novaHistoria {
+#feed-title {
+    font-family: "GilroySemiBold";
+    font-size: 32px;
+    color: var(--feed-title);
+    flex-grow: 2;
+}
+
+#feed-subtitle {
+    font-family: "GilroyMedium";
+    font-size: 16px;
+    color: var(--feed-subtitle);
+}
+
+#btn-newStory {
+    width: 40px;
+}
+
+#novaHistoria-containe-id {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    color: black;
+    font-size: 20px;
+    font-family: "GilroySemiBold";
+    cursor: pointer;
+}
+
+#novaHistoria {
     color: var(--font-black);
     margin: 0 0.5rem;
-    display: none;
-  }
-  #btn-newStory {
-    width: 80px;
-  }
+}
+
+@media (max-width: 425px) {
+    .page-container {
+    }
+    .content-container {
+        display: flex;
+        justify-content: center;
+        margin: 70px 12.5px;
+    }
+
+    .feed-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .feed-greeting {
+        padding: 0.5rem 0 1rem 0.5rem;
+    }
+    #novaHistoria-container-id {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    #novaHistoria {
+        color: var(--font-black);
+        margin: 0 0.5rem;
+        display: none;
+    }
+    #btn-newStory {
+        width: 80px;
+    }
 }
