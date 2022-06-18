@@ -14,8 +14,8 @@ function Home() {
     const [navState, setNavState] = useState(1);
     const [showState, setShowState] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-    const [storyUserPhoto, setStoryUserPhoto] = useState("");
-    const [storyCounter, setStoryCounter] = useState(1);
+    const [isMobile, setIsMobile] = useState(false);
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
     const [newStory, setNewStory] = useState({
         key: uuidv4,
         userName: "Ricardo Milos",
@@ -43,7 +43,7 @@ function Home() {
     return (
         <div className="page-container" id="home-page-id">
             <Navbar navState={navState} posts={posts.length} />
-            <Header navState={navState} />
+            <Header navState={navState} isMobile={isMobile} />
             <div className="header-content-container">
                 <main className="main-section" id="main-section-id">
                     <div className="content-container">

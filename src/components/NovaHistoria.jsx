@@ -130,7 +130,7 @@ function NovaHistoria(props) {
                     <form className="new-post-content-container">
                         <input
                             type="text"
-                            className="post-title"
+                            className="new-post-title"
                             id="storyTitle"
                             placeholder="Adicione um título"
                             onChange={handleChange}
